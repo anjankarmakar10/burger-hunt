@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
     <main className="max-w-[1250px] px-4 mx-auto flex flex-col-reverse md:flex-row">
@@ -5,19 +8,48 @@ export default function Home() {
         <h1 className="font-bold  text-5xl md:text-7xl max-w-4xl md:leading-snug">
           Bite into Flavorful Delights
         </h1>
-        <p className="py-10 text-xl mx-auto md:mx-0 font-medium max-w-[400px]">
+        <p className="py-10 text-xl mx-auto md:mx-0 font-medium md:max-w-[400px]">
           Savor the Juicy Goodness, Crafted with Passion. Indulge in Burger
           Bliss Beyond Compare.
         </p>
-        <button className="font-semibold text-xl px-6 py-2 rounded-lg bg-secondary">
+        <motion.button
+          whileTap={{
+            scale: 0.9,
+          }}
+          className="font-semibold text-xl px-6 py-2 rounded-lg bg-secondary"
+        >
           Get Started
-        </button>
+        </motion.button>
       </div>
       <div className="flex-2 relative">
-        <div className="absolute top-[15%] left-8 right-[50%] md:right-8 bottom-[20%] rounded-full bg-[#3c4650] bg-opacity-50 blur-2xl z-10"></div>
+        <motion.div
+          initial={{
+            scale: 0,
+          }}
+          animate={{
+            scale: 1,
+          }}
+          transition={{
+            type: "spring",
+            damping: 8,
+            duration: 0.3,
+          }}
+          className="absolute top-[15%] left-8 right-[20%] md:right-8 bottom-[20%] rounded-full bg-[#3c4650] bg-opacity-50 blur-2xl z-10"
+        ></motion.div>
 
-        <img
-          className="w-full relative z-20 lg:mt-[-4rem] max-w-xl"
+        <motion.img
+          initial={{
+            y: "-115%",
+          }}
+          animate={{
+            y: 0,
+          }}
+          transition={{
+            type: "spring",
+            damping: 8,
+            duration: 0,
+          }}
+          className="w-full   relative z-20 lg:mt-[-4.5rem] md:max-w-2xl"
           src="/bg.png"
           alt=""
         />
