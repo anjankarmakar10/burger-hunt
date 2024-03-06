@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Features = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center gap-10">
+    <section className="flex flex-col mt-32 md:flex-row items-center gap-10">
       <div className="flex-1 relative">
         <motion.img
           initial={{ scale: 0 }}
@@ -30,9 +30,12 @@ const Features = () => {
           redefine culinary excellence. From succulent patties to gourmet
           toppings, each bite is a journey through a world of flavors.{" "}
         </p>
-        <button className="px-6 py-[6px] text-2xl font-semibold bg-secondary rounded-full">
+        <motion.button
+          whileTap={{ scale: 0.9 }}
+          className="px-6 py-2 text-2xl font-semibold bg-secondary rounded-full"
+        >
           Order Now
-        </button>
+        </motion.button>
       </div>
     </section>
   );
