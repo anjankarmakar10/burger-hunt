@@ -42,7 +42,7 @@ const BurgerCard = ({ burger }) => {
               </svg>
             ))}
         </div>
-        <button className="text-lg mt-4 font-semibold px-6 py-1 rounded-full border-2 border-secondary">
+        <button className="text-lg mt-4 font-semibold px-6 py-1 rounded-full border-2 border-secondary transition-all hover:bg-secondary">
           Add to cart
         </button>
       </div>
