@@ -1,6 +1,7 @@
 import BestSection from "@/components/BestSection";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import PopularSection from "@/components/PopularSection";
 import Sponsors from "@/components/Sponsors";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Sponsors />
       <Features />
       <BestSection />
+      <PopularSection />
     </main>
   );
 }

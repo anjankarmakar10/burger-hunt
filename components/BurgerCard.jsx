@@ -1,7 +1,25 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const BurgerCard = ({ burger }) => {
   return (
-    <article className="flex-1 basis-72  flex flex-col border-4 border-transparent transition-all duration-300 hover:border-secondary pt-4 rounded-2xl  h-fit cursor-pointer">
-      <img className="w-60 mx-auto" src={burger.image} alt={burger.name} />
+    <article className="flex-1 basis-72  flex flex-col  transition-all duration-300  pt-4 rounded-2xl  h-fit cursor-pointer">
+      <div className="relative">
+        <motion.img
+          whileHover={{
+            scale: 1.1,
+          }}
+          transition={{
+            type: "spring",
+            damping: 9,
+          }}
+          className="w-60 mx-auto relative z-20"
+          src={burger.image}
+          alt={burger.name}
+        />
+        <motion.div className="absolute inset-0 rounded-full bg-[#3c4650] bg-opacity-50 blur-2xl z-10"></motion.div>
+      </div>
       <div className="flex flex-col gap-2 items-center p-4">
         <h6 className="text-xl font-semibold">{burger.name}</h6>
         <span className="text-lg font-medium">${burger.price}</span>
