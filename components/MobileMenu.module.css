@@ -7,7 +7,7 @@
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background-color: hotpink;
+  background-color: #ff5034;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@
   margin: auto;
   background-color: white;
   position: relative;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 .burger::after {
