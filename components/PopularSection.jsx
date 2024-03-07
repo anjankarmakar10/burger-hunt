@@ -45,7 +45,7 @@ const PopularSection = () => {
               />
               <motion.div className="absolute right-[10%] left-[10%] top-[10%] bottom-[10%] rounded-full bg-[#3c4650] bg-opacity-50 blur-2xl z-10"></motion.div>
             </div>
-            <div className="flex flex-1 flex-col gap-2 items-center sm:items-start p-4">
+            <div className="flex flex-1 flex-col gap-2 items-center sm:items-start text-center sm:text-start p-4">
               <h6 className="text-xl font-semibold">{burger.name}</h6>
               <span className="text-lg font-medium">${burger.price}</span>
               <div className="flex items-center">

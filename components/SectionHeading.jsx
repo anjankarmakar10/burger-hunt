@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const SectionHeading = ({ children }) => {
   return (
-    <header className="flex flex-col sm:flex-row items-center justify-between">
+    <header className="flex gap-2 flex-col sm:flex-row items-center justify-between">
       <h2 className="font-semibold text-3xl md:text-5xl ">{children}</h2>
       <Link href="/" className="flex items-center gap-1 text-2xl">
         See all

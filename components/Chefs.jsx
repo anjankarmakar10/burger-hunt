@@ -36,12 +36,12 @@ const Chefs = () => {
           >
             <div>
               <img
-                className="w-full object-cover h-96"
+                className="w-full object-cover h-auto sm:h-96"
                 src={chef.image}
                 alt={chef.name}
               />
             </div>
-            <div className="pt-7 pb-5 px-6 text-lg font-medium bg-secondary">
+            <div className="text-center sm:text-start pt-7 pb-5 px-6 text-lg font-medium bg-secondary">
               {chef.name}
             </div>
           </article>
