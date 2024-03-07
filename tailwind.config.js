@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         secondary: "#ff5034",
       },
+      backgroundImage: {
+        sub: "url('/bg-sub.jpg')",
+      },
     },
   },
   plugins: [],

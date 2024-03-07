@@ -21,7 +21,7 @@ const burgerList = [
 
 const PopularSection = () => {
   return (
-    <section className="mt-40 flex flex-col gap-14">
+    <section className="mt-52 flex flex-col gap-14">
       <SectionHeading>Our Popular Menu</SectionHeading>
 
       <div className="flex flex-col md:flex-row items-center gap-5 overflow-hidden ">

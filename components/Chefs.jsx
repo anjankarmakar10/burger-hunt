@@ -23,7 +23,7 @@ const chefs = [
 
 const Chefs = () => {
   return (
-    <section className="mt-40 flex flex-col gap-14">
+    <section className="mt-52 flex flex-col gap-14">
       <h2 className="font-semibold text-3xl md:text-5xl text-center">
         Our Best Chef
       </h2>
