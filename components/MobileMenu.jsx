@@ -95,6 +95,9 @@ const MobileMenu = () => {
                   {navItems.map((data, index) => {
                     return (
                       <motion.div
+                        onClick={() => {
+                          setIsActive(!isActive);
+                        }}
                         key={data.href}
                         className={styles.link}
                         custom={index}
@@ -103,12 +106,6 @@ const MobileMenu = () => {
                         animate="enter"
                         exit="exit"
                       >
-                        <motion.div
-                          variants={scale}
-                          animate={isActive ? "open" : "closed"}
-                          className={styles.indicator}
-                        ></motion.div>
-
                         <Link href={data.href}>{data.title}</Link>
                       </motion.div>
                     );

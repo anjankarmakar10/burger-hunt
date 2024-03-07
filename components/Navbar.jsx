@@ -74,7 +74,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <button className="text-xl text-secondary py-2 px-6 rounded-full border-2 border-secondary  font-semibold hidden md:flex mr-10">
+        <button className="text-xl text-secondary py-2 px-6 rounded-full border-2 border-secondary transition-all hover:text-white hover:bg-secondary  font-semibold hidden md:flex mr-14">
           Sign In
         </button>
 
