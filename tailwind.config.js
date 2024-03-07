@@ -14,7 +14,7 @@ module.exports = {
         secondary: "#ff5034",
       },
       backgroundImage: {
-        sub: "url('/bg-sub.jpg')",
+        sub: "url('/bg-sub.webp')",
       },
     },
   },

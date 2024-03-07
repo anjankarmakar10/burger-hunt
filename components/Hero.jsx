@@ -50,7 +50,7 @@ const Hero = () => {
             duration: 0,
           }}
           className="w-full   relative z-20 lg:mt-[-4.5rem] md:max-w-2xl"
-          src="/bg.png"
+          src="/bg.webp"
           alt=""
         />
       </div>

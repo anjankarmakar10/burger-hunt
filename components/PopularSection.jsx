@@ -14,7 +14,7 @@ const burgerList = [
     id: 2,
     name: "Double Cheese Bacon Fish Burger",
     price: 32,
-    image: "/b6.png",
+    image: "/b6.webp",
     rating: 5,
   },
 ];
